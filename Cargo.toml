@@ -1,0 +1,17 @@
+[package]
+authors = ["Kornel Lesiński <kornel@geekhood.net>"]
+name = "libimagequant-sys"
+version = "0.1.0"
+build = "build.rs"
+
+[lib]
+name = "imagequant"
+path = "lib.rs"
+crate-type = ["cdylib", "rlib", "staticlib"]
+
+[build-dependencies]
+gcc = "0.3.43"
+
+[features]
+default = ["sse"]
+sse = []

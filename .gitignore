@@ -9,3 +9,4 @@ config.mk
 *.dSYM
 org/pngquant/*.class
 org/pngquant/*.h
+target/
