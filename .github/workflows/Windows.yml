@@ -9,11 +9,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: test0
-      run: dir /s
+      run: ls
     - name: cmake
       run: cmake -G "Visual Studio 15 2017" ..
     - name: build
       run: cmake --build .
     - name: test1
-      run: dir /s
+      run: ls
 
