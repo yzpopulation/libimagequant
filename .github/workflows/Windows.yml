@@ -1,0 +1,17 @@
+name: Windows
+
+on: [push]
+
+jobs:
+  msvc2017:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: cmake
+      run: cmake -G "Visual Studio 15 2017" ..
+    - name: build
+      run: cmake --build .
+    - name: test
+      run: dir /s
+
